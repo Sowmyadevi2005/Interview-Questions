@@ -1,0 +1,31 @@
+1. Warning : LF will be replaced by CRLF the next time Git touches it.
+The default value for core.autocrlf is selected during Git installation and stored in system-wide gitconfig 
+(\Program Files\Git\etc\gitconfig on Windows, /etc/gitconfig on Linux). Also there are (cascading in the following order):
+   – "global" (per-user) gitconfig located at ~/.gitconfig, yet another
+   – "global" (per-user) gitconfig at $XDG_CONFIG_HOME/git/config or $HOME/.config/git/config and
+   – "local" (per-repo) gitconfig at .git/config in the working directory.
+
+So, write git config core.autocrlf in the working directory to check the currently used value and
+
+   – git config --system core.autocrlf false            # per-system solution
+   – git config --global core.autocrlf false            # per-user solution
+   – git config --local core.autocrlf false              # per-project solution
+   
+
+
+2. Author identity unknown
+*** Please tell me who you are.
+Run
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+fatal: unable to auto-detect email address (got 'Sowmya@Sowmya.(none)')
+
+3. error: src refspec mater does not match any
+error: failed to push some refs to 'https://github.com/Sowmyadevi2005/Interview-Questions.git'
+Run 
+	git pull
+then Run 
+	git push origin  master
+
