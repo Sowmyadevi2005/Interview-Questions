@@ -5,4 +5,5 @@
 4. git push
 5. git diff
 6. git clone
-
+7. git branch
+8. git checkout
